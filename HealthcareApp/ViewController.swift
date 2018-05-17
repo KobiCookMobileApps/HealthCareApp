@@ -87,10 +87,8 @@ class ViewController: UIViewController {
     @IBAction func rememberLoginSwitched(_ sender: UISwitch) {
         
         if sender.isOn {
-            usernameField.text = viewModel.username
             UserDefaults.standard.set(true, forKey: "loginSwitch")
         } else {
-            usernameField.text = ""
             UserDefaults.standard.set(false, forKey: "loginSwitch")
         }
         
